@@ -1,0 +1,26 @@
+Explorando Padrões de Projeto com Spring
+
+    1. Padrão Singleton
+        Uso: Gerenciamento de instâncias únicas de beans para otimizar o uso de memória e desempenho.
+        Implementação:
+            @Bean: Declara um bean de forma programática ou com configuração externa.
+            @Autowired: Injeção de dependência automática para injetar os beans requeridos.
+
+    2. Padrão Strategy
+        Uso: Define uma família de algoritmos, tornando as decisões sobre qual algoritmo usar dependentes do contexto.
+        Implementação:
+            @Service: Indica que uma classe contém lógica de negócios.
+            @Repository: Marca a classe como um repositório DAO (Data Access Object) para acesso a dados.
+
+    3. Padrão Facade
+        Uso: Fornece uma interface unificada para um conjunto de interfaces interfaces subsistemas, facilitando o uso e diminuindo a complexidade para os usuários.
+        Implementação:
+            API REST: Criação de uma API REST com Spring Data JPA para persistência de dados e integração com ViaCEP via Feign.
+
+Dependências:
+
+Spring Data JPA: Gerenciamento de persistência de dados.
+Spring Web: Facilita a criação de APIs RESTful.
+OpenFeign: Cliente HTTP para interagir com serviços externos (como ViaCEP).
+H2 Database: Banco de dados em memória para desenvolvimento rápido e testes.
+OpenAPI (antigo Swagger) [configuração manual]: Documentação automática das API's.
